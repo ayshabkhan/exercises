@@ -1,0 +1,19 @@
+pwd = check the present working directory
+cd = change directory to another folder (like cd Desktop/exercises)
+
+Add the file you want to upload into the local folder (github clone) on your computer
+
+git status = checks if the folder you're in is a git repository and if there's an untracked file (not yet on github)
+
+Then type: 
+git add filename.txt
+git commit -m "describe”
+git push origin master
+
+OR INSTEAD YOU CAN DO git add . = this 2nd version will add any files that haven't yet been added (as opposed to filename.txt only adds one file)
+
+IF YOUR LOCAL & GITHUB FILES DIVERGE:
+git pull origin master
+
+then, when you're in merging window:
+escape :wq
