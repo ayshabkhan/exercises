@@ -1,4 +1,0 @@
-Unstructured data source: Yelp listings on restaurant locations in Baltimore.
-https://www.yelp.com/search?cflt=restaurants&find_loc=Baltimore%2C+MD%2C+USA
-
-You can map out these locations for readers with live data on reviews and stars. More importantly, as a reporting system, you could get notifications when a new listing appears, a rating drops down or increases. These could point to a new business, a change in ownership, low food safety standards or another potential story.
