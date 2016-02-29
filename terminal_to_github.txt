@@ -12,8 +12,39 @@ git push origin master
 
 OR INSTEAD YOU CAN DO git add . = this 2nd version will add any files that haven't yet been added (as opposed to filename.txt only adds one file)
 
-IF YOUR LOCAL & GITHUB FILES DIVERGE:
+## IF YOUR LOCAL & GITHUB FILES DIVERGE:
 git pull origin master
 
 then, when you're in merging window:
 escape :wq
+
+## what if you want to just push a new version of a file (that's already in the repository)?
+
+modify the local file & save over the existing file.
+
+Next, you tell git you want to record the change to that file:
+git add file.txt
+
+Then you tell git to go ahead and actually make the snapshot:
+git commit -m "Fix various typos."
+
+Then you can push the change to the remote:
+git push
+
+If you know for sure what files have changed, and know you definitely want to record all of these changes, the first two commands can be combined like so:
+git commit -am "Fix various typos."
+
+Note the addition of the -a part – this means 'automatically record any changed files in this commit'.
+
+## SQLite ~magic words~
+
+
+SELECT = show me
+* = all rows and columns
+	ORRR you could write out column_names, like_this, separated, by_commas
+FROM = source?
+WHERE = criteria
+	LIKE SO: where fieldname > 999
+LIKE = contains
+wildcard character: %
+	LIKE "%irs.gov%"
